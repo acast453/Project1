@@ -1,5 +1,4 @@
 
-import javafx.scene.shape.Polygon;
 
 import javax.swing.*;
 
