@@ -15,7 +15,9 @@ public class Point extends GeometricObject
      */
     public Point()
     {
-        x = y = 0;
+
+        x = 0;
+        y = 0;
     }
 
     /**

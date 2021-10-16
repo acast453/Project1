@@ -50,6 +50,7 @@ public class Rectangle extends GeometricObject
      */
     public Point getBegin()
     {
+
         return new Point(begin.getX(), begin.getY());
     }
 
@@ -60,6 +61,7 @@ public class Rectangle extends GeometricObject
      */
     public Point getEnd()
     {
+
         return new Point(end.getX(), end.getY());
     }
 
@@ -80,6 +82,7 @@ public class Rectangle extends GeometricObject
      */
     public double greatestY()
     {
+
         return begin.getY()>end.getY() ? begin.getY():end.getY();
     }
     
@@ -90,6 +93,7 @@ public class Rectangle extends GeometricObject
      */
     public double height()
     {
+
         return Math.abs(begin.getY() - end.getY());
     }
 
@@ -100,6 +104,7 @@ public class Rectangle extends GeometricObject
      */
     public void setBegin(Point p)
     {
+
         begin = new Point(p.getX(), p.getY());
     }
 
@@ -110,6 +115,7 @@ public class Rectangle extends GeometricObject
      */
     public void setEnd(Point p)
     {
+
         end = new Point(p.getX(), p.getY());
     }
 
@@ -120,6 +126,7 @@ public class Rectangle extends GeometricObject
      */
     public double smallestX()
     {
+
         return begin.getX()<end.getX() ? begin.getX():end.getX();
     }
 
@@ -130,6 +137,7 @@ public class Rectangle extends GeometricObject
      */
     public double smallestY()
     {
+
         return begin.getY()<end.getY() ? begin.getY():end.getY();
     }
     
@@ -165,6 +173,7 @@ public class Rectangle extends GeometricObject
      */
     public double width()
     {
+
         return Math.abs(begin.getX() - end.getX());
     }
 
