@@ -30,13 +30,32 @@ public class Algorithms
     public static int isPointContainedIn(GeometricObject[] g, Point p)
     {
         Rectangle[] rArray = (Rectangle[])g;
-        
+
         for (int i=0; i<g.length; i++)
         {
             if (rArray[i].isPointInRectangle(p))
                 return i;
         }
-        
+
         return -1;
     }
+
+    public static int isPointInPolygon(GeometricObject[] g, Point p){
+
+
+      RectPolygon[] pArray = (RectPolygon[])g;
+
+        for (int i=0; i<g.length; i++)
+        {
+            if (pArray[i].isPointRectPolygon(p))
+                return i;
+        }
+        return -1;
+    }
+
+
+
+
+
+
 }

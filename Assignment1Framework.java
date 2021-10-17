@@ -12,7 +12,8 @@ public class Assignment1Framework
     public Assignment1Framework()
     {        
         //Defining the geometric objects that represent the problem data
-        Rectangle[] rArray = new Rectangle[8];
+        GeometricObject[] rArray = new GeometricObject[8];
+
         
         Point p = new Point(5, 6);
         Point q = new Point(10, 370);
@@ -47,6 +48,24 @@ public class Assignment1Framework
         q = new Point(203, 391);
         rArray[7] = new Rectangle(p, q);
 
+
+        Point p1 = new Point(273, 161);
+        Point p2 = new Point(273, 182);
+        Point p3 = new Point(279, 202);
+        Point p4 = new Point(289, 202);
+        Point p5 = new Point(296, 182);
+        Point p6 = new Point(296, 162);
+
+        RectPolygon rectPolygonOne = new RectPolygon();
+
+        rectPolygonOne.addVertex(p1);
+        rectPolygonOne.addVertex(p2);
+        rectPolygonOne.addVertex(p3);
+        rectPolygonOne.addVertex(p4);
+        rectPolygonOne.addVertex(p5);
+        rectPolygonOne.addVertex(p6);
+
+        rArray[7]= rectPolygonOne;
 
         
         //graphing
