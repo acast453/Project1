@@ -45,8 +45,11 @@ public class RectPolygon extends GeometricObject {
      * @return
      */
     public Rectangle boundingRectangle() {
-
-        return null;
+        double x1 = smallestX();
+        double x2 = greatestX();
+        double y1 = smallestY();
+        double y2 = greatestY();
+        return new Rectangle(new Point(x1, y1), new Point(x2, y2));
     }
 
 

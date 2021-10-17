@@ -12,7 +12,7 @@ public class Assignment1Framework
     public Assignment1Framework()
     {        
         //Defining the geometric objects that represent the problem data
-        GeometricObject[] rArray = new GeometricObject[8];
+        GeometricObject[] rArray = new GeometricObject[9];
 
         
         Point p = new Point(5, 6);
@@ -65,7 +65,7 @@ public class Assignment1Framework
         rectPolygonOne.addVertex(p5);
         rectPolygonOne.addVertex(p6);
 
-        rArray[7]= rectPolygonOne;
+        rArray[8]= rectPolygonOne;
 
         
         //graphing
