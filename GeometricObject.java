@@ -40,6 +40,7 @@ abstract public class GeometricObject
         this.interiorColor = interiorColor;
     }
 
+
     @Override
     public String toString()
     {
