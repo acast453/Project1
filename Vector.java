@@ -1,4 +1,8 @@
-
+/**
+ * Anthony Castillo
+ * Panther Id: 5910063
+ *
+ */
 /**
  * This class represents a position vector given by its x and y components.
  */

@@ -1,4 +1,10 @@
 /**
+ * Anthony Castillo
+ * Panther Id: 5910063
+ *
+ */
+
+/**
  * This class implements several algorithms.
  */
 public class Algorithms {

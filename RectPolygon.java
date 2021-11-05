@@ -1,5 +1,15 @@
+/**
+ * Anthony Castillo
+ * Panther Id: 5910063
+ *
+ */
 import java.awt.*;
 
+/**
+ *  Polygon class gets an array of Vertex of the polygon that is going to be constructed
+ *
+ *
+ */
 public class RectPolygon extends GeometricObject {
     Point[] vertexList;
     int size;
@@ -42,6 +52,8 @@ public class RectPolygon extends GeometricObject {
     }
 
     /**
+     * Rectangle Bounding
+     *
      * @return
      */
     public Rectangle boundingRectangle() {
@@ -72,6 +84,8 @@ public class RectPolygon extends GeometricObject {
     }
 
     /**
+     * Gets the number of vertices.
+     *
      * @return
      */
     public int getNumberOfVertices() {
@@ -117,6 +131,9 @@ public class RectPolygon extends GeometricObject {
     }
 
     /**
+     *
+     * Algorithm to see if a point is in a Rectilinear Polygon.
+     *
      * @param p
      * @return
      */
@@ -147,7 +164,7 @@ public class RectPolygon extends GeometricObject {
                 double dy = vertexList[i + 1].getY() - vertexList[i].getY();
 
                 if (Math.abs(dx) < eps) {
-                    //K = infinite
+
                 } else {
                     k = dy / dx;
                 }
@@ -201,6 +218,9 @@ public class RectPolygon extends GeometricObject {
     }
 
     /**
+     * Shows points
+     *
+     *
      * @return
      */
     public String toString() {
@@ -218,6 +238,9 @@ public class RectPolygon extends GeometricObject {
 
 
     /**
+     * Translates points in Vertex List
+     *
+     *
      * @param v
      */
     public void translate(Vector v) {

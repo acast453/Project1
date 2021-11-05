@@ -1,4 +1,8 @@
-
+/**
+ * Anthony Castillo
+ * Panther Id: 5910063
+ *
+ */
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseMotionListener;
@@ -83,8 +87,27 @@ public class GraphDisplay extends JPanel implements MouseMotionListener
                 description = "Ricardo Silva Stadium";
                 break;
             case 8:
-                description = "GL";
+                description = "West 3 - Key Control";
                 break;
+
+            case 9:
+                description = "Rafael Diaz-Balart Hall";
+                break;
+
+            case 10:
+                description = "West 01C - Ceramics";
+                break;
+
+            case 11:
+                description = "West 1 - Sculpture + Art Foundation";
+                break;
+
+            case 12:
+                description = "Digital art Studio";
+                break;
+
+
+
             default:
                 description = "";
                 break;

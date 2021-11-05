@@ -1,4 +1,8 @@
-
+/**
+ * Anthony Castillo
+ * Panther Id: 5910063
+ *
+ */
 import java.awt.*;
 
 abstract public class GeometricObject
