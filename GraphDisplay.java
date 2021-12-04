@@ -12,19 +12,26 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
+
 public class GraphDisplay extends JPanel implements MouseMotionListener
 {
     GeometricObject[] gArray; //geometric objects
     private BufferedImage image; //background image
     String description; //description of map element
-    
+    Rectangle selectionRectangle; //rectangle that the user draws dynamically
+    Point begin;
+
+
     /**
      * Parameterized constructor.
      */
     public GraphDisplay(GeometricObject[] g)
     {
         this.gArray = g;
+        begin = null;
+        selectionRectangle = null;
         addMouseMotionListener(this);
+
         
         try
         {
@@ -40,6 +47,10 @@ public class GraphDisplay extends JPanel implements MouseMotionListener
     
     public void mouseDragged(MouseEvent e)
     {
+        Point end = new Point(e.getX(), e.getY());
+        selectionRectangle = new Rectangle(begin, end);
+
+        repaint();
     }
 
     /**
@@ -135,5 +146,15 @@ public class GraphDisplay extends JPanel implements MouseMotionListener
         g.setColor(Color.WHITE);
         g.setFont(new Font("SansSerif", Font.BOLD, 12));
         g.drawString(description, 20, 405);
+
+        //draws geometric objects
+        if (selectionRectangle != null)
+            selectionRectangle.draw(g);
+
+        for (GeometricObject e:gArray)
+        {
+            e.draw(g); //invokes object's draw method through polymorphism
+        }
+
     }
 }
